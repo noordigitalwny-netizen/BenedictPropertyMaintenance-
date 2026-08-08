@@ -23,10 +23,9 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: 'Home', href: '#home' },
-    { name: 'Services', href: '#services' },
-    { name: 'Pricing', href: '#pricing' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Home', href: '/' },
+    { name: 'Services & Pricing', href: '/services' },
+    { name: 'Contact', href: '/#contact' },
   ];
 
   return (
@@ -41,7 +40,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           
           {/* Brand Logo & Name */}
-          <Link href="#home" className="flex items-center gap-3 group">
+          <Link href="/" className="flex items-center gap-3 group">
             <div className="relative w-11 h-11 rounded-lg overflow-hidden border border-blue-500/40 group-hover:border-blue-400 transition-colors bg-blue-950/50 flex-shrink-0">
               <Image
                 src="/Benedict.jpg"
