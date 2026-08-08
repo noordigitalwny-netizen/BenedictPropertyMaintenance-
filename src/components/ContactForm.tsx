@@ -3,6 +3,7 @@
 import { useState, FormEvent } from 'react';
 import { Phone, Mail, MapPin, Send, CheckCircle2, Clock, Loader2, AlertCircle } from 'lucide-react';
 import { FacebookIcon, InstagramIcon } from '@/components/SocialIcons';
+import { SERVICES_DATA } from '@/data/servicesData';
 
 /**
  * =========================================================================================
@@ -283,10 +284,15 @@ export default function ContactForm() {
                         onChange={(e) => setFormData({ ...formData, service: e.target.value })}
                         className="w-full px-4 py-3 rounded-xl bg-black border border-slate-800 text-white focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors text-sm"
                       >
-                        <option value="Exterior Power Washing">Exterior Power Washing</option>
-                        <option value="Lawn & Grounds Maintenance">Lawn & Grounds Maintenance</option>
-                        <option value="Seasonal Property Maintenance">Seasonal Property Maintenance</option>
-                        <option value="Full Estate Care Package">Full Estate Care Package</option>
+                        {SERVICES_DATA.map((cat) => (
+                          <optgroup key={cat.id} label={cat.title} className="bg-slate-900 text-blue-400 font-semibold">
+                            {cat.items.map((item, idx) => (
+                              <option key={idx} value={`${cat.title}: ${item.name} (${item.priceFormatted})`} className="bg-black text-white font-normal">
+                                {item.name} — {item.priceFormatted}
+                              </option>
+                            ))}
+                          </optgroup>
+                        ))}
                       </select>
                     </div>
                   </div>
