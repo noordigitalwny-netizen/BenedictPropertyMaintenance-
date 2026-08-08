@@ -14,7 +14,7 @@ import { FacebookIcon, InstagramIcon } from '@/components/SocialIcons';
  * 4. Alternatively, you can directly replace 'YOUR_WEB3FORMS_ACCESS_KEY_HERE' below with your key.
  * =========================================================================================
  */
-const WEB3FORMS_ACCESS_KEY = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY || 'YOUR_WEB3FORMS_ACCESS_KEY_HERE';
+const WEB3FORMS_ACCESS_KEY = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY || 'cc510206-a240-4408-ad61-2e99a09ab360';
 
 export default function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
