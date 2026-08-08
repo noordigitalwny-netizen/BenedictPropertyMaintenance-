@@ -151,7 +151,7 @@ export default function ContactForm() {
                   <Mail className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="text-sm font-semibold text-white">Web3Forms Enabled</h4>
+                  <h4 className="text-sm font-semibold text-white">Email Inquiries</h4>
                   <p className="text-xs text-slate-400">Instant email notification sent to our management team</p>
                 </div>
               </div>

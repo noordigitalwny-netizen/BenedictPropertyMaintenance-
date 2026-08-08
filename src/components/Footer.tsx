@@ -118,7 +118,7 @@ export default function Footer() {
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
           <p>© {new Date().getFullYear()} Benedict Property Maintenance. All rights reserved.</p>
           <p className="flex items-center gap-2">
-            <span>Blue, Black & White Precision Theme</span>
+            <span>Designed by Noor Digital WNY</span>
           </p>
         </div>
 
