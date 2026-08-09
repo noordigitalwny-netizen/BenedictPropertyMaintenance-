@@ -1,30 +1,30 @@
-import { Shield, Home, Calendar, Award } from 'lucide-react';
+import { Shield, Home, Calendar, Paintbrush } from 'lucide-react';
 
 export default function AboutMission() {
   const highlights = [
     {
-      icon: Shield,
-      title: 'Property Protection',
+      icon: Paintbrush,
+      title: 'Interior Painting & Drywall',
       description:
-        'Prevent costly surface degradation and moisture buildup with expert exterior pressure washing and soft washing techniques.',
+        'Transform rooms year-round with professional interior painting, drywall patching, sheetrock repair, and dust-free finishing.',
+    },
+    {
+      icon: Shield,
+      title: 'Exterior Protection & Washing',
+      description:
+        'Prevent costly siding degradation and mildew with expert house soft washing, driveway cleaning, and protective sealants.',
     },
     {
       icon: Home,
-      title: 'Curb Appeal Enhancement',
+      title: 'Groundskeeping & Curb Appeal',
       description:
-        'Keep your property looking pristine in every season with sharp lawn edging, detailed cleanup, and spotless siding.',
+        'Keep your grounds manicured in every season with precision lawn mowing, edging, aeration, mulching, and yard cleanups.',
     },
     {
       icon: Calendar,
-      title: 'Year-Round Reliability',
+      title: '365-Day Year-Round Reliability',
       description:
-        'From spring lawn prep and summer power washing to autumn gutter clearing and winter snow defense, we cover your home 365 days a year.',
-    },
-    {
-      icon: Award,
-      title: 'Western NY Commitment',
-      description:
-        'Locally owned and trusted by homeowners across WNY with high standards of craftsmanship and dedicated customer satisfaction.',
+        'From indoor winter painting and drywall repairs to spring lawn prep, summer washing, and winter snow plowing across WNY.',
     },
   ];
 
@@ -43,15 +43,15 @@ export default function AboutMission() {
             </div>
 
             <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-white leading-tight">
-              Dedicated to Protecting & Enhancing Your Home Year-Round
+              Comprehensive Indoor & Outdoor Care Year-Round
             </h2>
 
             <p className="text-slate-300 text-base leading-relaxed">
-              At <strong className="text-white">Benedict Property Maintenance</strong>, we believe every property in Western New York deserves round-the-clock care. Extreme weather, humidity, and seasonal changes take a heavy toll on siding, lawns, and roofs.
+              At <strong className="text-white">Benedict Property Maintenance</strong>, we provide complete interior and exterior property solutions throughout Western New York. Whether updating interior walls with fresh paint and drywall repairs during winter or keeping your exterior spotless in summer, we operate 365 days a year.
             </p>
 
             <p className="text-slate-400 text-sm leading-relaxed">
-              Our mission is to provide homeowners and commercial property managers with reliable, high-quality maintenance solutions that boost curb appeal, increase property value, and deliver total peace of mind.
+              Our mission is to give homeowners and property managers a single, reliable team for high-quality interior maintenance, lawn care, pressure washing, and seasonal protection with total peace of mind.
             </p>
 
             <div className="pt-2 flex items-center gap-6 border-t border-slate-800/80">
@@ -61,8 +61,8 @@ export default function AboutMission() {
               </div>
               <div className="h-8 w-px bg-slate-800" />
               <div>
-                <div className="text-2xl font-bold text-white">4 Seasons</div>
-                <div className="text-xs text-slate-400">Complete Coverage</div>
+                <div className="text-2xl font-bold text-white">Indoor & Outdoor</div>
+                <div className="text-xs text-slate-400">Full Service</div>
               </div>
               <div className="h-8 w-px bg-slate-800" />
               <div>

@@ -10,6 +10,7 @@ import {
   Paintbrush, 
   Scissors, 
   Wrench, 
+  Hammer,
   Check, 
   Phone, 
   ArrowRight, 
@@ -21,15 +22,16 @@ import Link from 'next/link';
 
 export const metadata = {
   title: 'Services & Pricing | Benedict Property Maintenance Western NY',
-  description: 'View baseline prices for Snow Plowing, Property Maintenance, Pressure Washing, Gutter Cleaning, Painting, Lawn Care, and Custom Services in WNY. Call 585-813-4445!',
+  description: 'View baseline prices for Drywall Services, Painting, Snow Plowing, Property Maintenance, Pressure Washing, Gutter Cleaning, Lawn Care, and Custom Services in WNY. Call 585-813-4445!',
 };
 
 const categoryIcons: Record<string, typeof Snowflake> = {
+  'drywall-services': Hammer,
+  'painting-services': Paintbrush,
   'snow-plowing': Snowflake,
   'property-maintenance': Home,
   'pressure-washing': Droplets,
   'gutter-services': CloudRain,
-  'painting-services': Paintbrush,
   'lawn-landscaping': Scissors,
   'other-services': Wrench,
 };

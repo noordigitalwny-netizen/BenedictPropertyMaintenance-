@@ -1,6 +1,6 @@
 export interface ServiceItem {
   name: string;
-  price: number;
+  price?: number;
   priceFormatted: string;
 }
 
@@ -14,6 +14,33 @@ export interface ServiceCategory {
 }
 
 export const SERVICES_DATA: ServiceCategory[] = [
+  {
+    id: 'drywall-services',
+    title: 'Drywall Services',
+    badge: 'Interior Restoration',
+    startingPrice: 'Contact for pricing',
+    description: 'Expert interior drywall repairs, hole patching, seam taping, textured finishing, and new panel installation.',
+    items: [
+      { name: 'Drywall Repair', priceFormatted: 'Contact for pricing' },
+      { name: 'Drywall Patching', priceFormatted: 'Contact for pricing' },
+      { name: 'Drywall Installation', priceFormatted: 'Contact for pricing' },
+    ],
+  },
+  {
+    id: 'painting-services',
+    title: 'Painting & Staining Services',
+    badge: 'Interior & Exterior',
+    startingPrice: 'Starting at $75',
+    description: 'Professional interior room painting, ceiling refinishing, trim work, doors, and complete exterior home painting.',
+    items: [
+      { name: 'Door Painting', price: 75, priceFormatted: 'Starting at $75' },
+      { name: 'Trim and Baseboards', price: 100, priceFormatted: 'Starting at $100' },
+      { name: 'Ceiling Painting', price: 150, priceFormatted: 'Starting at $150' },
+      { name: 'Interior Painting', price: 400, priceFormatted: 'Starting at $400' },
+      { name: 'Room Painting', price: 400, priceFormatted: 'Starting at $400' },
+      { name: 'Exterior Painting', price: 1000, priceFormatted: 'Starting at $1000' },
+    ],
+  },
   {
     id: 'snow-plowing',
     title: 'Snow Plowing & De-Icing',
@@ -33,7 +60,7 @@ export const SERVICES_DATA: ServiceCategory[] = [
     title: 'Property Maintenance & Repairs',
     badge: 'Year-Round Maintenance',
     startingPrice: 'Starting at $150',
-    description: 'Comprehensive property upkeep, exterior fixes, shutter installs, and storm recovery for WNY homes.',
+    description: 'Comprehensive interior and exterior property upkeep, home repairs, shutter installs, and storm recovery.',
     items: [
       { name: 'Property Maintenance Audit', price: 150, priceFormatted: 'Starting at $150' },
       { name: 'Minor Home Repairs', price: 150, priceFormatted: 'Starting at $150' },
@@ -69,21 +96,6 @@ export const SERVICES_DATA: ServiceCategory[] = [
       { name: 'Gutter Cleaning', price: 100, priceFormatted: 'Starting at $100' },
       { name: 'Gutter Repair', price: 250, priceFormatted: 'Starting at $250' },
       { name: 'Gutter Installation / Replacement', price: 750, priceFormatted: 'Starting at $750' },
-    ],
-  },
-  {
-    id: 'painting-services',
-    title: 'Painting & Staining Services',
-    badge: 'Interior & Exterior',
-    startingPrice: 'Starting at $75',
-    description: 'Professional painting for rooms, ceilings, doors, trim, and full home exteriors across WNY.',
-    items: [
-      { name: 'Door Painting', price: 75, priceFormatted: 'Starting at $75' },
-      { name: 'Trim and Baseboards', price: 100, priceFormatted: 'Starting at $100' },
-      { name: 'Ceiling Painting', price: 150, priceFormatted: 'Starting at $150' },
-      { name: 'Interior Painting', price: 400, priceFormatted: 'Starting at $400' },
-      { name: 'Room Painting', price: 400, priceFormatted: 'Starting at $400' },
-      { name: 'Exterior Painting', price: 1000, priceFormatted: 'Starting at $1000' },
     ],
   },
   {

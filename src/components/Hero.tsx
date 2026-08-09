@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { ArrowRight, CheckCircle2, ShieldCheck, Sparkles, MapPin } from 'lucide-react';
+import { ArrowRight, CheckCircle2, ShieldCheck, Sparkles, MapPin, Paintbrush } from 'lucide-react';
 
 export default function Hero() {
   return (
@@ -18,18 +18,18 @@ export default function Hero() {
           {/* Service Area Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-950/80 border border-blue-500/40 shadow-inner shadow-blue-500/10 text-xs sm:text-sm font-medium text-blue-300 backdrop-blur-md">
             <MapPin className="w-4 h-4 text-blue-400 animate-bounce" />
-            <span>Serving All of Western New York (WNY)</span>
+            <span>Serving All of Western New York (WNY) • Year-Round Interior & Exterior</span>
             <span className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-ping" />
           </div>
 
           {/* Eye-catching Headline */}
           <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight text-white leading-[1.1]">
-            Premier <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-500 to-blue-200">Exterior Cleaning</span>, Lawn Care & Seasonal Maintenance
+            Interior <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-500 to-blue-200">Painting & Drywall</span>, Exterior Care & Property Maintenance
           </h1>
 
           {/* Subheading */}
-          <p className="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto font-normal leading-relaxed">
-            Protecting and enhancing your Western New York home year-round. From high-pressure wash restores to precision lawn care and snow removal.
+          <p className="text-lg sm:text-xl text-slate-300 max-w-3xl mx-auto font-normal leading-relaxed">
+            Protecting and enhancing your Western New York home inside and out. From professional interior painting and expert drywall repairs to exterior pressure washing, lawn care, and snow plowing.
           </p>
 
           {/* Action Buttons */}
@@ -43,32 +43,32 @@ export default function Hero() {
             </Link>
 
             <Link
-              href="#pricing"
+              href="/services"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-slate-900/90 hover:bg-slate-800 text-slate-100 font-semibold text-base px-8 py-4 rounded-xl border border-slate-700 hover:border-blue-500/50 transition-all duration-300 backdrop-blur-md"
             >
-              <span>View Pricing</span>
+              <span>View Services & Pricing</span>
             </Link>
           </div>
 
           {/* Key Value Pill Highlights */}
-          <div className="pt-10 grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto text-left">
+          <div className="pt-10 grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl mx-auto text-left">
             <div className="flex items-center gap-3 p-3.5 rounded-xl bg-slate-900/60 border border-slate-800/80 backdrop-blur-sm">
               <div className="p-2 rounded-lg bg-blue-950 text-blue-400 border border-blue-800/40">
-                <CheckCircle2 className="w-5 h-5" />
+                <Paintbrush className="w-5 h-5" />
               </div>
               <div>
-                <h2 className="text-sm font-semibold text-white">Full Exterior Wash</h2>
-                <p className="text-xs text-slate-400">Pressure & soft washing</p>
+                <h2 className="text-sm font-semibold text-white">Interior Painting & Drywall</h2>
+                <p className="text-xs text-slate-400">Rooms, ceilings, trim & repairs</p>
               </div>
             </div>
 
             <div className="flex items-center gap-3 p-3.5 rounded-xl bg-slate-900/60 border border-slate-800/80 backdrop-blur-sm">
               <div className="p-2 rounded-lg bg-blue-950 text-blue-400 border border-blue-800/40">
-                <Sparkles className="w-5 h-5" />
+                <CheckCircle2 className="w-5 h-5" />
               </div>
               <div>
-                <h2 className="text-sm font-semibold text-white">Precision Lawn Care</h2>
-                <p className="text-xs text-slate-400">Mowing, edging & turf care</p>
+                <h2 className="text-sm font-semibold text-white">Exterior Soft & Pressure Wash</h2>
+                <p className="text-xs text-slate-400">Siding, driveways & decks</p>
               </div>
             </div>
 
@@ -77,8 +77,8 @@ export default function Hero() {
                 <ShieldCheck className="w-5 h-5" />
               </div>
               <div>
-                <h2 className="text-sm font-semibold text-white">Seasonal Care</h2>
-                <p className="text-xs text-slate-400">Gutters, leaves & snow</p>
+                <h2 className="text-sm font-semibold text-white">4-Season Property Care</h2>
+                <p className="text-xs text-slate-400">Lawn care, gutters & snow plowing</p>
               </div>
             </div>
           </div>
